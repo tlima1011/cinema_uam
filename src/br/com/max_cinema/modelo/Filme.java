@@ -14,6 +14,7 @@ public class Filme {
 	ArrayList <Sessao> sessao = new ArrayList<>(); 
 	ArrayList <Cliente> cliente = new ArrayList<>(); 
 	ArrayList <Endereco> endereco = new ArrayList<>();
+	private Funcionario funcionario; 
 	
 	public Filme() { 
 		id_filme = ultimoCodigo++;
@@ -90,8 +91,13 @@ public class Filme {
 	public void removeEndereco(Endereco e) { 
 		removeEndereco(e); 
 	}
-	
-	
-	
 
+	public Funcionario getFuncionario() {
+		return funcionario;
+	}
+
+	public void setFuncionario(Funcionario funcionario) {
+		this.funcionario = funcionario;
+	}
+	
 }
