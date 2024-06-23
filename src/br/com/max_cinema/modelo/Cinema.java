@@ -10,6 +10,8 @@ public class Cinema {
 	private int quantidade_salas; 
 	private int capacidade;
 	ArrayList <Sessao> sessao = new ArrayList<>();
+	ArrayList <Endereco> endereco =  new ArrayList<>();
+	ArrayList <Telefone> telefone = new ArrayList<>(); 
 	//private Sessao sessao;
 	
 	public Cinema() {
@@ -41,6 +43,22 @@ public class Cinema {
 	
 	public void removeSessao(Sessao s) { 
 		sessao.remove(s);
+	}
+	
+	public void addEndereco(Endereco e) { 
+		endereco.add(e); 
+	}
+	
+	public void removeEndereco(Endereco e) { 
+		endereco.remove(e); 
+	}
+	
+	public void addTelefone(Telefone t) { 
+		telefone.add(t); 
+	}
+	
+	public void removeTelefone(Telefone t) { 
+		telefone.remove(t);
 	}
 
 }

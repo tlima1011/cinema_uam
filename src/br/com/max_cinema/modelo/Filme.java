@@ -13,6 +13,7 @@ public class Filme {
 	private String pais; 
 	ArrayList <Sessao> sessao = new ArrayList<>(); 
 	ArrayList <Cliente> cliente = new ArrayList<>(); 
+	ArrayList <Endereco> endereco = new ArrayList<>();
 	
 	public Filme() { 
 		id_filme = ultimoCodigo++;
@@ -80,6 +81,14 @@ public class Filme {
 	
 	public void removeCliente(Cliente c) {
 		removeCliente(c); 
+	}
+	
+	public void addEndereco(Endereco e) { 
+		addEndereco(e); 
+	}
+	
+	public void removeEndereco(Endereco e) { 
+		removeEndereco(e); 
 	}
 	
 	
