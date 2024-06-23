@@ -15,6 +15,7 @@ public class Sessao {
 	private double valor; 
 	private int quantidade;
 	private Cinema cinema;
+	private Filme filme;
 	
 	public Sessao() { 
 		codigo_sessao = ultimoCodigo++;
@@ -53,6 +54,14 @@ public class Sessao {
 
 	public Sessao(Cinema cinema) {
 		this.cinema = cinema;
+	}
+
+	public Filme getFilme() {
+		return filme;
+	}
+
+	public void setFilme(Filme filme) {
+		this.filme = filme;
 	} 
 	
 	

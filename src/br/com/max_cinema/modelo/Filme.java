@@ -12,6 +12,7 @@ public class Filme {
 	private int duracao; 
 	private String pais; 
 	ArrayList <Sessao> sessao = new ArrayList<>(); 
+	ArrayList <Cliente> cliente = new ArrayList<>(); 
 	
 	public Filme() { 
 		id_filme = ultimoCodigo++;
@@ -71,6 +72,14 @@ public class Filme {
 	
 	public void removeSessao(Sessao s) {
 		removeSessao(s); 
+	}
+	
+	public void addCliente(Cliente c) { 
+		addCliente(c); 
+	}
+	
+	public void removeCliente(Cliente c) {
+		removeCliente(c); 
 	}
 	
 	
